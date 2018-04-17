@@ -24,9 +24,9 @@ public class StartDLCR {
 
 		 String stackName="startDLCR";
 		 CreateStackRequest CF=new CreateStackRequest();
-		 CF.setTemplateURL("	https://s3.amazonaws.com/alexademoc1/AlexaDLCR.json");
+		 CF.setTemplateURL("s3UrlforCFT");
 		 CF.setStackName(stackName);
-		 AWSCredentials awsCreds = new BasicAWSCredentials("AKIAIBOR3QJEJ45PDFNA","8fvqvdNytv3PNj+dCJ/+o0O893kzFPyCk2xcJ4Rl");
+		 AWSCredentials awsCreds = new BasicAWSCredentials("accesskey","secretkey");
 //		 AmazonCloudFormationClientBuilder.standard().withCredentials(new AWSStaticCredentialsProvider(awsCreds)).build();
 	     AmazonCloudFormation stackbuilder = new AmazonCloudFormationClient(awsCreds);
 	     Region usWest2 = Region.getRegion(Regions.US_EAST_1);
